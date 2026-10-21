@@ -1,0 +1,20 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="ar-gradient" x1="18" y1="18" x2="108" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset=".48" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="#0B1024"/>
+  <path
+    d="M24 91 49 39Q52 32 58 39L88 91H69L55 65 42 91H24Z"
+    fill="url(#ar-gradient)"
+  />
+  <path
+    d="M64 32H83C101 32 110 42 110 55C110 65 104 72 95 76L111 96H90L69 68H83C91 68 95 64 95 57C95 50 91 46 83 46H73L64 32Z"
+    fill="url(#ar-gradient)"
+  />
+</svg>

@@ -4,12 +4,13 @@ import React from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu';
 import LightDarkMode from './navbar-components/LightDarkMode';
+import AppSideBarCollapse from './navbar-components/AppSideBarCollapse';
 
 const NavBar = () => {
   return (
     <nav className='p-4 flex justify-between items-center'>
       {/* Left */}
-      appSideBarCollapse
+      <AppSideBarCollapse />
 
       {/* RIGHT */}
       <div className='flex items-center justify-between gap-4'>
