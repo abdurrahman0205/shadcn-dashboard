@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupAction, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuBadge, SidebarMenuButton, SidebarMenuItem, SidebarMenuSub, SidebarMenuSubButton, SidebarMenuSubItem, SidebarSeparator } from './ui/sidebar';
-import { Home, Inbox, Calendar, Search, Settings, User2, ChevronUp, Plus, ClipboardPen, CircleQuestionMark, ChevronDown } from 'lucide-react'
+import { Home, Inbox, Calendar, Search, Settings, User2, ChevronUp, Plus, ClipboardPen, CircleQuestionMark, ChevronDown, Clipboard } from 'lucide-react'
 import Link from 'next/link';
 import Image from 'next/image';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
@@ -118,13 +118,15 @@ const AppSideBar = () => {
                 <SidebarMenu>
                   <SidebarMenuItem>
                     <SidebarMenuButton render={<Link href='#' />}>
+                      <Clipboard />
                       Go to official site
                     </SidebarMenuButton>
                   </SidebarMenuItem>
 
                   <SidebarMenuItem>
                     <SidebarMenuButton render={<Link href='#' />}>
-                      Need More Help <CircleQuestionMark className='ml-auto' />
+                      <CircleQuestionMark />
+                      <span>Need More Help?</span>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
 
